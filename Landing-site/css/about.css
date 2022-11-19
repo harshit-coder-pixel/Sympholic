@@ -1,0 +1,255 @@
+*{
+    font-family: Lato, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-size:15px ;
+    
+}
+.active{
+    color: white !important;
+    background-color: #3f928f !important;
+}
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top:50px;
+    background-color: rgb(31, 40, 51);
+}
+.nav h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #66FCF1;
+    padding-top: 56px;
+}
+.nav-link a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    padding:8px 8px 8px 32px;
+}
+.nav-link a:hover{
+    color: #cfcbcb;
+    
+}
+.nav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.nav .closebtn:hover{
+    color: #f1f1f1;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 100ms linear;
+}
+.user img{
+    width: 38px;
+    border-radius: 50%;
+    padding: 5px;
+    border: #66FCF1 solid 2px;
+    background-color: black;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+span .fa{
+    color: #000;
+    font-weight: 100;
+    font-size: 200%;
+}
+span.menu-lable{
+    font-size: 120%;
+    padding: 0 10px ;
+    color: black;
+    /* background-color: black; */
+}
+.menu-ico{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.social-icon-nav{
+    margin:40px 0 0 20px;
+    overflow: hidden;
+  }
+  .social-icon-nav a{
+    display: inline-block;
+    color: #cfcbcb;
+    font-size: 20px;
+    background-color:#45A29E;
+    border-radius: 50%;
+    padding: 10px 18px;
+    margin-left: 15px;
+    transition: 0.3s;
+    overflow: hidden;
+  
+  }
+  .social-icon-nav a:hover{
+    color: #fff;
+    background-color:#40a19dce;
+    
+  }
+  .btn-contact button{
+    display: block;
+    margin: 018% auto;
+    transform: translate(-15px, 0px);
+    border:none;
+    background-color: #45a29d00;
+    border: 1px solid #66FCF1;
+    padding: 8px 30px;
+    transition: background-color 0.4s linear,border 0.4s ease-in-out;
+    overflow: hidden;
+  }
+.btn-contact button a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    color: #cfcbcb;
+    display: block;  
+  }
+  .btn-contact button:hover{
+    background-color: #66FCF1;
+    border: none;
+    cursor: pointer;
+}
+.btn-contact button:hover a{
+
+    color: black;
+    transition: 0.2s;
+}
+
+h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    color: #1f2833;
+}
+.header p{
+   text-align: center;
+   font-size: 30px;
+   max-width: 800px;
+   margin: auto;
+   color: C5C6C7;
+}
+
+.content{
+    max-width: 1050px;
+    margin: 50px auto;
+    display: flex;
+    align-content: space-around;
+    gap: 25px;
+    text-align:  justify;
+}
+
+.bg-dark{
+    background-color: #1F2833;
+}
+h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 4.5px;
+    color: #f1f1f1;
+    text-align: center;
+}
+.padding-64px{
+    padding: 38px 0 16px;
+}
+.brand-partner{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 30px;
+}
+footer{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 24px;
+}
+.hov:hover{
+    opacity: 0.6;
+}
+i{
+    padding: 0 2px 8px;
+}
+.light{
+    opacity: 0.6;
+}
+
+i.hov:hover{
+    transform:translate(0,-10px) ;
+}
+
+@media screen and (max-width:1050px) {
+    .content{
+        flex-wrap: wrap;
+    }
+}
+
+.subnav{
+    position: relative;
+}
+.subnav-content1 {
+    display: none;
+    position: absolute;
+    right: 8px;
+    z-index: 1000;
+    margin-top: -10px;
+    background-color:#3a3b3c;
+  }
+  .subnav:hover .subnav-content1 {
+    display: block;
+  }
+
+  .subnav-content1 a {
+    /* width: 25rem; */
+    width: 15rem;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    display: block !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .subnav-content1   a:hover {
+    background-color: #eee;
+    color: black;
+  }
+
+  @media screen and (max-width:700px) {
+        .content{
+            padding: 0 20px;
+        }
+        .header h1{
+            font-size: 2.2rem !important;
+        }
+        .header p{
+            font-size: 1.8rem !important;
+        }
+        p{
+            font-size: 1.2rem !important;
+        }
+  }

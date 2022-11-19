@@ -1,0 +1,45 @@
+Scheme Basis
+------------------
+Age
+Gender
+State
+District
+Annual Income
+Constitutional Provision (General/OBC/OSC)
+Disability (Types)
+
+
+
+
+Conditions
+[
+    {
+        parameter:"age",
+        value:"age >= 18 && age < 60"
+    },
+    {
+        parameter:"gender"
+        array:["male","female"]
+        value:"genders.includes(gender)"
+    },
+    {
+        parameter:"state",
+        array:["j&k","delhi"],
+        value:"states.includes(state)
+    }
+]
+
+
+For Development Projects
+
+Unique ID
+Name
+Location
+Updated on
+Starting Date
+Tentative Finishing Date
+Description
+Company Name
+Budget
+Information Document
+Related Photos

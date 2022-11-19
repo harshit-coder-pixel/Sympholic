@@ -1,0 +1,174 @@
+body{
+    display: flex;
+}
+main{
+    min-width: 40%;
+    /* max-height: 0vh; */
+    margin: 15vh auto;
+    display:flex;
+    /* justify-content: center; */
+    background:  #ffffff; 
+    border-radius:  4px; 
+    box-shadow:  0px 2px 6px -1px rgba(0,0,0,.12);
+}
+
+.left{
+    /* margin-left: -14px; */
+    width: 45%; 
+    height:  auto; 
+    min-height:  100%; 
+    position:  relative; 
+    background-image: url("https://images.unsplash.com/photo-1651041577175-e75c2da20682?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+    background-size:  cover;
+    border-top-left-radius:  4px; 
+    border-bottom-left-radius:  4px; 
+}
+.right{
+    margin-left: 20px;
+    color:rgba(0, 0, 0,0.4);
+}
+.right h2{
+    font-size: 2rem;
+    margin: 50px 10px 20px;
+    color: #211522;
+    text-align: center;
+}
+.right p{
+    font-size: 100%;
+    /* margin: 30px 10px 20px; */
+}
+form{
+    margin-top:50px;
+}
+label{
+  display: none;
+}
+
+input[type]{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #211522;
+    font-size: 100%;
+    margin: 10px 10px;
+    width: 90%;
+    /* display: block;  */
+    outline: none;
+    /* width: 70%; */
+}
+*:focus{
+    outline: none;
+    background-color: inherit;
+}
+button {
+    /* float: right; */
+    /* clear: both; */
+    border-radius:  6px; 
+    text-align:  center; 
+    padding:  13px 35px;
+    /* margin-top:  5px;  */
+    background-color:  rgb(181, 144, 248);
+    color:  #fff; 
+    font-size:  0.9rem;
+    font-weight:  500; 
+    box-shadow:  0px 2px 6px -1px rgba(0,0,0,.13); 
+    border:  none;
+    transition:  all .3s ease; 
+    cursor:  pointer; 
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+  }
+  button:active {
+    /* transform:  scale(.99); */
+
+  }
+  button:hover {
+    /* transform:  translate(-110%,-3px); */
+    background-color: #613659;
+    box-shadow:  0 2px 6px -1px rgb(182,157,230);
+  }
+  .user-hover{
+      width: 13%;
+      display: none;
+      position: absolute !important;
+      background-color: #613659;
+      color: white;
+      right: 10px;
+  }
+.user-hover li{
+    display:block !important;
+    border-bottom:1px solid #211522 !important;
+  
+  }
+
+  .user-hover li a.drop-item{
+    padding: 20px;
+    font-size: 18px;
+   
+  }
+  .user:hover .user-hover{
+      display: block;
+  }
+
+.user-hover li:hover, .user-hover li a:hover{
+    background-color: #211522;
+    background-color:#211522 !important;
+}
+input:focus{
+    outline: none;
+}
+p.hov#hov{
+    margin-right:40px;
+    margin-top:10px;
+    font-size: 13px ;
+}
+p.hov#hov:hover{
+	cursor: pointer !important;
+	color: black;
+}
+.sign-in{
+    padding: 0 20px;
+    margin:20px 0 60px ;
+
+}
+.sign-in a{
+    color: #3f928f;
+    text-decoration: none;
+}
+span i.fa:hover{
+    cursor: pointer;
+    color: black;
+}
+@media screen and (max-width:700px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    main{
+        max-width: 100%;
+        padding: 10px;
+        /* height: 70vh; */
+        margin-top: 22%;
+        max-height: 100vh
+    }
+    .left{
+        display: none;
+    }
+    label{
+        display: none;
+    }
+    input[type]{
+        width: 90%;
+    }
+    .sign-in{
+        margin:20px 0 50px ;
+    }
+    button{
+        display: block;
+        width: 85%;
+    }
+}
+input:-webkit-autofill{
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: Nova;
+    src: url('./assests/fonts/Nova.otf');
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-moz-selection{
+    color: white;
+    background: #45A29E;
+  }
+  
+  ::selection {
+      color: white;
+    background: #45A29E;
+  }
+.random-background{
+    background: url('./assests/img1.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:brightness(0.6);
+    height: 45vh;
+    z-index: -1;
+}
+.margin-div{
+    margin: 0 20px;
+}
+.post-title-section{
+    position: relative;
+    max-width: 900px;
+    margin: -52px auto;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.423);
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.137);
+}
+
+.post-title{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 260%;
+    font-weight: 800;
+    color: #2e353b;
+    text-align: center;
+    padding:25px 30px ;
+}
+/* #6b6b6b */
+h1,h2,h3,h4,h5,h6{
+    color: #2e353b;
+    font-family:'Pathway Gothic One', sans-serif;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+.post-content-section{
+    max-width: 860px;
+    margin: 70px auto 50px;
+}
+h2{
+    font-size: 220%;
+}
+h3{
+    font-size: 200%;
+}
+h4{
+    font-size: 180%;
+}
+h5{
+    font-size: 160%;
+}
+h6{
+    font-size: 140%;
+}
+article a{
+    color: #45A29E;
+    text-decoration: none;
+}
+p{
+    font-size: 18px;
+    font-family: Nova,Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #6b6b6b;
+    line-height: 150%;
+    text-align:justify;
+    margin: 30px 0;
+}
+img{
+    margin: 40px 0 15px;
+    padding: 0;
+    width: 420px;
+    height: 320px;
+    display: block;
+    object-fit:cover;
+    border-radius: 25px;
+    border: #2e353b 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button-show{
+    text-transform: capitalize;
+    display: block;
+    margin: 0 auto;
+    border-radius: 9px;
+    padding: 15px 60px;
+    font-size: 22px;
+    border: none;
+    background-color: #45A29D;
+    color: white;
+    font-family: Nova,Arial, Helvetica, sans-serif;
+}
+.button-show:hover{
+    background-color: #2e353b;
+    color: white;
+    cursor: pointer;
+}
+hr{
+    width: 40%;
+    margin: 0 auto 30px;
+}
+.eligble{
+    max-width: 970px;
+    margin: 0 auto;
+   
+}
+.eligble-heading{
+    font-size: 220%;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 30px;
+    margin-bottom: 64px;
+}
+
+.container-flex div{
+    background-color: rgb(248, 245, 245);
+    padding: 20px 18px;
+    border: 1px solid #2e353b;
+    border-radius: 25px;
+}
+.container-flex div p{
+    padding: 0;
+    margin: 12px 0 0;
+    line-height: 1.25;
+    color: black;
+    font-size: 16px;
+}
+.container-flex div .card-title{
+    font-size: 200%;
+    margin: 10px;
+    padding: 10px;
+}
+.container-flex div p a{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    background: #45A29D;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.container-flex div a:hover{
+    background: #2e353b;
+    color: white;
+    cursor: pointer;
+}
+.post-content-section span{
+    color: rgb(29, 28, 28);
+}
+.card-title{
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.Nothing-visible{
+    width: 100%;
+    padding: 90px !important;    
+}
+div.Nothing-visible p{
+    text-align: center;
+    font-size: 20px;
+    color: #2e353b85;
+    padding: 0px;
+    margin: 10px;
+}
+h4.nothingTitle{
+    text-align: center;
+    padding: 0;
+    margin: 10;    
+    color: #2e353b85;
+}
+.card{
+  flex: 1 1 0;
+}
+
+@media screen and (max-width:650px) {
+    .random-background{
+        height: 40vh;
+    }
+    img{
+        width: 100% !important;
+    }
+    .container-flex{
+        flex-direction: column;
+    }
+    .container-flex div p a{
+        width: 100%;
+    }
+    
+}
